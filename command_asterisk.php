@@ -73,6 +73,7 @@
 			echo "<p>";
 			var_dump($extension_array);
 			echo "<p>";
+			// test
 			?> 
 		</body> 
 </html>

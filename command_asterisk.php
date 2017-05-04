@@ -1,9 +1,12 @@
 <html>
-	<head></head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="css/command.css">
+	</head>
 		<body>
 			<?php
-			
-			
+					
 			$post_extension = $_POST['extension'];
 			$sip = "SIP/".$post_extension; // SIP/3000
 			$selected_channel = "";
@@ -55,7 +58,7 @@
 					fputs($socket2, "Action: Command\r\n");
 					//fputs($socket, "Command: core show channels\r\n\r\n");
 					fputs($socket2, "Command: channel request hangup ".$selected_channel."\r\n\r\n");
-					echo "The call has been successfully terminated";
+					//echo "The call has been successfully terminated";
 					fputs($socket2, "Action: Logoff\r\n\r\n");
 				
 					while (!feof($socket2)) {

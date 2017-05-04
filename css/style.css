@@ -8,24 +8,15 @@
 
 
 body {
-	background: #DEDEDE;
-	display: flex;
-	min-height: 100vh;
-}
-
-form {
-	margin: auto;
-	width: 50%;
-	max-width: 500px;
-	background: #F3F3F3;
-	padding: 30px;
-	border: 1px solid rgba(0,0,0,0.2); 
+	background-image: url("images/textura.png");
+	background-repeat: repeat;
 }
 
 h2 {
 	text-align: center;
 	margin-bottom: 20px;
-	color: rgba(0,0,0,0.5);
+	color: black;
+	font-size: 45px;
 }
 
 input {
@@ -39,4 +30,14 @@ input {
 button {
 	color: red;
 }
+
+.login{
+	margin: 5% 30%;
+	width: 600px;
+	height: 48%;
+	padding: 30px;
+	background: white;	
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
 
